@@ -1,0 +1,59 @@
+h1{
+    font-size: 70px;
+    color: #2b9ec2;
+    margin-left: 90px;
+}
+.wrapper {
+    padding: 0px 60px;
+    margin: 60px auto;
+}
+.content{
+    width: 40%;
+    float: left;
+    padding: 0px 30px;
+    text-align: justify;
+}
+.extra{
+    display: none;
+}
+p{
+    display: inline;
+}
+input[type="checkbox"]{
+    height: 2em;
+    display: block;
+    background-color: #000;
+    appearance: none;
+}
+label {
+    position: relative;
+    padding: 1em;
+    background-color: #ddd;
+    color:rgb(8, 45, 47);
+    cursor: pointer;
+}
+label:hover{
+    color: burlywood;
+}
+label::before{
+    content: "Read More";
+}
+input[type="checkbox"]:checked ~ label::before{
+    content: "Read Less";
+}
+.dots:has(~ input[type="checkbox"]:checked) {
+    display: none;
+}
+.extra:has(~ input[type="checkbox"]:checked) {
+    display: inline;
+}
+.img-section{
+    width: 50%;
+    float: right;
+    
+}
+.img-section img{
+    max-width: 100%;
+    width: 600px;
+    
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalji Mela &amp; Festival, Mahoba : कजली मेला, महोबा</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="donation.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="nav">
+        <img src="logo.png" alt="mahoba logo">
+        <div id="part">
+            <a href="home.html">Home</a>
+            <a href="About.html">About</a>
+            <a id="over" href="#">Donation</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Donations to support Kajli Mela Mahoba</h1>
+        <p>Help support us to complete our mission. We support emerging artists, working artists as well as small and mid-sized art organization and small wendors. Exhibitions, awards and support are just some of the ways we give back.</p>
+        <div class="donation-amounts">
+            <button class="donation-amount" data-amount="20.00">IN₹20.00</button>
+            <button class="donation-amount selected" data-amount="50.00">IN₹50.00</button>
+            <button class="donation-amount" data-amount="75.00">IN₹75.00</button>
+            <button class="donation-amount" data-amount="100.00">IN₹100.00</button>
+        </div>
+        <button class="donate-button">Donate</button>
+    </div>
+    
+    <script>
+        document.querySelectorAll('.donation-amount').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.donation-amount').forEach(btn => btn.classList.remove('selected'));
+                button.classList.add('selected');
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
